@@ -1,0 +1,189 @@
+.infos {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: row;
+}
+.info-cars-pay {
+    width: 100%;
+    height: 200vh;
+}
+.img-car {
+    height: 89vh;
+    width: 75%;
+    position:sticky;
+    top: 11%;
+    background-image: url(/home/assets/images/carrotes.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.info-car {
+    height: 100%;
+    background-color: black;
+    width: 25%;
+}
+.escurecer-img {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+.image-img-car {
+    width: 100%;
+    height: 100%;
+}
+.img-value-car {
+    width: 520px;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.values-img {
+    border-radius: 10px 10px 0px 0px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+.spar-info-img {
+    width: 1px;
+    height: 25%;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-left: 2px solid white;
+}
+#flecha-cima {
+    margin-left: 10px;
+    border-radius: 30px;
+    background-color: rgb(20, 20, 20);
+    padding: 5px;
+    box-shadow: 0px 1px 7px rgba(80, 80, 80, 0.274);
+}
+.modal-wrap {
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: absolute;
+    top: 11%;
+    left: 0;
+    z-index: 998;
+}
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: fixed;
+    top: 15%;
+    left: 13%;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 900px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 600px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+  .close-wrap {
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }

@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>TechMotors - Payment</title>
 </head>
 
@@ -169,25 +170,47 @@
         
 
     <section class="info-cars-pay">
-        <div class="modal-wrap">
+        <div class="modal-wrap" id="imgslide" >
             <div class="wrapper">
-                <span class="close-wrap">&times;</span>
                 <i id="left" class="fa-solid fa-angle-left"></i>
                 <ul class="carousel">
                   <li class="card">
-                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
-                    <h2>Blanche Pearson</h2>
-                    <span>Sales Manager</span>
+                        <div class="fechar-aba">
+                           <span class="material-symbols-outlined close-wrap" onclick="closeimgslid()">
+                            close
+                            </span> 
+                        </div>
+                        
+                        <div class="cont-card">
+                            <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                            <h2>Blanche Pearson</h2>
+                            <span>Sales Manager</span>
+                        </div>
+                    
                   </li>
                   <li class="card">
-                    <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
-                    <h2>Joenas Brauers</h2>
-                    <span>Web Developer</span>
+                    <div class="fechar-aba">
+                        <span class="material-symbols-outlined close-wrap" onclick="closeimgslid()">
+                         close
+                         </span> 
+                     </div>
+                     <div class="cont-card">
+                        <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                        <h2>Blanche Pearson</h2>
+                        <span>Sales Manager</span>
+                    </div>
                   </li>
                   <li class="card">
-                    <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
-                    <h2>Lariach French</h2>
-                    <span>Online Teacher</span>
+                    <div class="fechar-aba">
+                        <span class="material-symbols-outlined close-wrap" onclick="closeimgslid()">
+                         close
+                         </span> 
+                     </div>
+                     <div class="cont-card">
+                        <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                        <h2>Blanche Pearson</h2>
+                        <span>Sales Manager</span>
+                    </div>
                   </li>
                 </ul>
                 <i id="right" class="fa-solid fa-angle-right"></i>
@@ -195,8 +218,10 @@
         </div>
         <div class="infos">
             <div class="img-car">
-                <div class="escurecer-img"></div>
-                <div class="img-value-car">
+                <video class="vid-car" controls autoplay>
+                    <source src="/home/assets/video/vid4.mp4" type="video/mp4">
+                </video>
+                <div class="img-value-car" onclick="openimgslid()">
                     <div class="values-img">
                             <span id="flecha-cima" class="material-symbols-outlined">
                                 expand_less
@@ -208,6 +233,13 @@
                 </div>
             </div>
             <div class="info-car">
+                <div class="texto-infocar">
+                    <h2>PORSCHE</h2>
+                    <H3>992 GT3 CUP</H3>
+                    <p>Est. Delivery: Jun – Jul 2023</p>
+                    <p>Delivery ZIP Code: 89120</p>
+                </div>
+                
             </div>
         </div>
         

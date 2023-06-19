@@ -11,3 +11,10 @@ function openLoginForm() {
   function closeCadastForm() {
     document.getElementById("CadastroForm").style.display = "none";
   };
+
+  function openimgslid() {
+    document.getElementById("imgslide").style.display = "flex";
+  }
+  function closeimgslid() {
+    document.getElementById("imgslide").style.display = "none";
+  };

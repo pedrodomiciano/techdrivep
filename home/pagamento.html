@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <title>TechMotors - Payment</title>
 </head>
 
@@ -218,8 +220,8 @@
         </div>
         <div class="infos">
             <div class="img-car">
-                <video class="vid-car" controls autoplay>
-                    <source src="/home/assets/video/vid4.mp4" type="video/mp4">
+                <video class="vid-car" preload="auto" autoplay loop muted>
+                    <source src="/home/assets/video/vid5.mp4" type="video/mp4">
                 </video>
                 <div class="img-value-car" onclick="openimgslid()">
                     <div class="values-img">
@@ -236,8 +238,83 @@
                 <div class="texto-infocar">
                     <h2>PORSCHE</h2>
                     <H3>992 GT3 CUP</H3>
-                    <p>Est. Delivery: Jun – Jul 2023</p>
-                    <p>Delivery ZIP Code: 89120</p>
+                    <p class="delivery">Est. Delivery: Jun – Jul 2023</p>
+                    <p class="zipcode">Delivery ZIP Code: 89120</p>
+                    <div class="radio-input">
+                        <label>
+                        <input type="radio" id="value-1" name="value-radio" value="value-1">
+                        <span>Porsche Torque Vectoring Plus</span>
+                        </label>
+                        <label>
+                          <input type="radio" id="value-2" name="value-radio" value="value-2">
+                        <span>Porsche Dynamic Chassis Control</span>
+                        </label>
+                        <span class="selection"></span>
+                      </div>
+                    <div class="num-km">
+                        <div class="mi">
+                            <p>272<span>mi</span></p>
+                            <h5> Range (EPA est.)</h5>
+                        </div>
+                        <div class="mph">
+                            <p>100<span>mph</span></p>
+                            <h5>Top Speed</h5>
+                        </div>
+                        <div class="sec">
+                            <p>5.8<span>sec</span></p>
+                            <h5>0-60 mph</h5>
+                        </div>
+                    </div>
+                    <h3 id="perf">
+                        Performance Upgrade
+                    </h3>
+                    <h5 id="inc">Included</h5>
+                    <ul id="perf-ul">
+                        <li class="perf-li">20’’ Überturbine Wheels</li>
+                        <li class="perf-li">Performance Brakes</li>
+                        <li class="perf-li">Carbon fiber spoiler</li>
+                        <li class="perf-li">Aluminum alloy pedals</li>
+                    </ul>
+                    <h3 id="perf">Enhanced Autopilot</h3>
+                    <h5 id="inc">$6,000</h5>
+                    <ul id="perf-ul">
+                        <li class="perf-li">Navigate on Autopilot</li>
+                        <li class="perf-li">Auto Lane Change</li>
+                        <li class="perf-li">Autopark</li>
+                        <li class="perf-li">Summon</li>
+                        <li class="perf-li">Smart Summon</li>
+                    </ul>
+                    <div class="buttons-comp">
+                        <a id="button-li" class="ad" href="">Add</a>
+                        <a id="button-li" class="feat" href="">Feature Details</a>
+                    </div>
+                    <h2 id="perf">Full Self-Driving Capability</h2>
+                    <h5 id="inc">$15,000</h5>
+                    <ul id="perf-ul">
+                        <li class="perf-li">All functionality of Basic Autopilot and Enhanced Autopilot</li>
+                        <li class="perf-li">Traffic Light and Stop Sign Control</li>
+                    </ul>
+                    <h5 id="coming">Coming Soon</h5>
+                    <ul id="perf-ul">
+                        <li class="perf-li">Autosteer on city streets</li>
+                    </ul>
+                    <p id="txt-coming">
+                        The currently enabled features require active driver supervision and do not make the vehicle autonomous. The activation and use of these features are dependent on achieving reliability far in excess of human drivers as demonstrated by billions of miles of experience, as well as regulatory approval, which may take longer in some jurisdictions. As these self-driving features evolve, your car will be continuously upgraded through over-the-air software updates.
+                    </p>
+                    <div class="buttons-comp">
+                        <a id="button-li" class="ad" href="">Add</a>
+                        <a id="button-li" class="feat" href="">Feature Details</a>
+                    </div>
+                    <p id="txt-coming2" >Software options are excluded from the federal tax credit price cap</p>
+                    <h2 id="perf">Order Your 992 GT3 CUP</h2>
+                    <p id="inc">Est. Delivery: Jun – Jul 2023</p>
+                    <div class="verifi">
+                        <span class="material-symbols-outlined">
+                            verified
+                            </span>
+                        <p id="txt-coming3">Your design qualifies for a $7,500 federal tax credit for eligible buyers.</p>
+                    </div>
+                        <a href="" class="orderbuy">Order Now</a>
                 </div>
                 
             </div>
@@ -253,4 +330,5 @@
     <script src="./assets/js/jquery-3.6.4.min.js"></script>
     <script src="./assets/js/slide-img.js"></script>
     <script src="./assets/js/slide-img-car.js"></script>
+
 </body>

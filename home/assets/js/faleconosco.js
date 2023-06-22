@@ -1,12 +1,12 @@
 
 function abrirFaleConosco() {
   // Exibe a janela do formulário
-  document.getElementById("box-questions").style.display = "block";
+  document.getElementById("faleconosco").style.display = "flex";
 }
 
 function fecharFaleConosco() {
   // Oculta a janela do formulário
-  document.getElementById("box-questions").style.display = "none";
+  document.getElementById("faleconosco").style.display = "none";
 }
 
 

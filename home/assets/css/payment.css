@@ -436,3 +436,89 @@
   background-color: red;
   color: white;
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.open-btn {
+	cursor: pointer;
+}
+.popup {
+	position: fixed;
+  top:11%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+	display: none;
+	overflow: hidden;
+  color: black;
+	/* background-color: aqua; */
+}
+.popup-overlay {
+	background-color: rgba(0, 0, 0, 0.575);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+}
+.main-popup {
+	position: absolute;
+	left: 0;
+	height: 85vh;
+	width: 60%;
+	z-index: 1;
+	background: white;
+	padding: 30px 20px;
+	line-height: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-100%);
+}
+.close-btn {
+	border: .6px solid white;
+	padding: 10px;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: .5s ease all;
+}
+.close-btn:hover {
+	background: white;
+}
+.pop-text {
+  width: 700px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 20px;
+}
+@keyframes slide-in {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slide-out {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+.pop-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  line-height: 30px;
+}
+.pop-linha {
+  width: 800px;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.marg-pop {
+  margin-bottom: 30px;
+}

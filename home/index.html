@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     
 
@@ -30,25 +34,46 @@
 
 
     <!-- teste botão-->
-    <button class="botao" onclick="abrirFaleConosco()">Fale Conosco</button>
-    <div class="box-questions" id="box-questions">
-        <div class="header">
-            <div class="img-chat"></div>
-          <div class="text-chat">
-            <h3 class="nome-chat">Fale Conosco</h3>
-            <h5 class="status-chat">Tempo de Resposta: Aprox. 1 minuto</h3>
-          </div>
-          <button class="fechar" onclick="fecharFaleConosco()"> X </button>
+    <button class="botao" onclick="abrirFaleConosco()">
+        <span class="material-symbols-outlined">
+            sms
+            </span>
+    </button>
+    <div class="faleconosco" id="faleconosco">
+        <div class="fale-title">Central de Perguntas</div>
+        <span class="material-symbols-outlined close" onclick="fecharFaleConosco()">
+            close
+            </span>
+        <div class="content-fale">
+            <h3 class="cont-txt">Converse Conosco</h3>
+            <h5 class="cont-sub">Antes de o ligarmos a um Atendente, forneça as seguintes informações</h5>
+            <label>
+                <h2 class="tt-lb">Nome Próprio</h2>
+                <input class="put-txt-cont" type="text" />
+            </label>
+            <label>
+                <h2 class="tt-lb">Sobrenome (Opcional)</h2>
+                <input class="put-txt-cont" type="text" />
+            </label>
+            <label>
+                <h2 class="tt-lb">Endereço eletrônico</h2>
+                <input class="put-txt-cont" type="text" />
+            </label>
+            <label>
+                <h2 class="tt-lb">Telefone</h2>
+                <input class="put-txt-cont" type="number" />
+            </label>
+            <label>
+                <h2 class="tt-lb">Código Postal</h2>
+                <input class="put-txt-cont" type="number" />
+            </label>
+            <div class="bot-pop">
+                <a class="cont-pop-bt" href="">Iniciar Bate-Papo</a>
+            </div>
+            
         </div>
-        <h5 id="status"></h5>
-        <div id="history">
-          <!-- respostas do playground -->
-        </div>
-        <div class="footer">
-                <input type="text" id="message-input" placeholder="Qual sua dúvida?">
-                <button class="btn-submit" id="btn-submit" onclick="sendMessage()">Enviar</button>
-        </div>
-      </div>
+        
+    </div>
     <!-- final botao-->
 
    <!--Menu-->

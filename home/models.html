@@ -29,174 +29,286 @@
     <title>TechMotors - Payment</title>
 </head>
 <body>
-    <!-- teste botão-->
-    <button class="botao" onclick="abrirFaleConosco()">
-        <span class="material-symbols-outlined">
-            sms
-            </span>
-    </button>
-    <div class="faleconosco" id="faleconosco">
-        <div class="fale-title">Central de Perguntas</div>
-        <span class="material-symbols-outlined close" onclick="fecharFaleConosco()">
-            close
-            </span>
-        <div class="content-fale">
-            <h3 class="cont-txt">Converse Conosco</h3>
-            <h5 class="cont-sub">Antes de o ligarmos a um Atendente, forneça as seguintes informações</h5>
-            <label>
-                <p class="tt-lb">Nome Próprio</p>
-                <input class="put-txt-cont" type="text" />
-            </label>
-            <label>
-                <p class="tt-lb">Sobrenome (Opcional)</p>
-                <input class="put-txt-cont" type="text" />
-            </label>
-            <label>
-                <p class="tt-lb">Endereço eletrônico</p>
-                <input class="put-txt-cont" type="text" />
-            </label>
-            <label>
-                <p class="tt-lb">Telefone</p>
-                <input class="put-txt-cont" type="number" />
-            </label>
-            <label>
-                <p class="tt-lb">Código Postal</p>
-                <input class="put-txt-cont" type="number" />
-            </label>
-            <div class="bot-pop">
-                <a class="cont-pop-bt" href="">Iniciar Bate-Papo</a>
-            </div>
-            
+<!-- teste botão-->
+<button class="botao" onclick="abrirFaleConosco()">
+    <span class="material-symbols-outlined">
+        sms
+        </span>
+</button>
+<div class="faleconosco" id="faleconosco">
+    <div class="fale-title">Central de Perguntas</div>
+    <span class="material-symbols-outlined close" onclick="fecharFaleConosco()">
+        close
+        </span>
+    <div class="content-fale">
+        <h3 class="cont-txt">Converse Conosco</h3>
+        <h5 class="cont-sub">Antes de o ligarmos a um Atendente, forneça as seguintes informações</h5>
+        <label>
+            <p class="tt-lb">Nome Próprio</p>
+            <input class="put-txt-cont" type="text" />
+        </label>
+        <label>
+            <p class="tt-lb">Sobrenome (Opcional)</p>
+            <input class="put-txt-cont" type="text" />
+        </label>
+        <label>
+            <p class="tt-lb">Endereço eletrônico</p>
+            <input class="put-txt-cont" type="text" />
+        </label>
+        <label>
+            <p class="tt-lb">Telefone</p>
+            <input class="put-txt-cont" type="number" />
+        </label>
+        <label>
+            <p class="tt-lb">Código Postal</p>
+            <input class="put-txt-cont" type="number" />
+        </label>
+        <div class="bot-pop">
+            <a class="cont-pop-bt" href="">Iniciar Bate-Papo</a>
         </div>
         
     </div>
-    <!-- final botao-->
+    
+</div>
+<!-- final botao-->
 
-    <!--Menu-->
-    <section class="navbar">
-        <nav>
-            <div class="logo">
-                <img src="./assets/images/logo.png"  width="80px"/>
-            </div>
-            <div class="navtools">
-                <ul>
-                    <li><a href="/home/index.html">Inicio</a></li>
-                    <li><a href="">Modelos</a></li>
-                    <li><a href="">Compre Agora</a></li>
-                    <li><a href="">Nossa Marca</a></li>
-                </ul>
-            </div>
-            <div class="accounttools">
-                <ul>
-                    <li><a onclick="openCadastForm()" class="nav__links caixa__cadastro">Cadastro</a></li>
-                    <li><a onclick="openLoginForm()" class="nav__links caixa__login">Login</a></li>
-                </ul>
-            </div>
-        </nav>
-    <!-- Final do Menu-->
-
-        <!--PopUp Login-->
-        <div id="loginForm" class="modal">
-            <div class="modalcont">
-            <span class="close" onclick="closeLoginForm()">&times;</span>
-            <h2>Login</h2>
-                <form method="POST" target="_blank" action="index.html"  >
-                    <div class="caixa__login-input">
-                        <input name="email" type="text" required />
-                        <label>Email</label>
-                    </div>
-                    <div class="caixa__login-input">
-                        <input name="senha"type="password" required />
-                        <label>Senha</label>
-                    </div>
-                    <a href="submit" value="acessar">
-                        
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Acessar
-                    </a>
-                </form>
-            </div>
-        </div>   
-
-        <div id="CadastroForm" class="modal">
-            <div class="modalcont2">
-            <span class="close" onclick="closeCadastForm()">&times;</span>
-            <h2>Cadastre-se</h2>
-                <form method="post" target="_blank" action="./assets/php/inserir.php"  >
-                    <div class="inputs">
-                        <div class="caixa__cadastro-input">
-                            <input id="nome" name="nome" type="text" required />
-                            <label>Nome Completo</label>
-                        </div>
-                        <div class="caixa__cadastro-input">
-                            <input id="cpf" name="cpf" oninput="mascara(this)" type="text" required>
-                            <label>CPF</label>
-                        </div> 
-                    </div>
-                    <div class="inputs">
-                        <div class="caixa__cadastro-input">
-                            <input id="email" name="email" type="email" required/>
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="caixa__cadastro-input">
-                            <input id="senha" name="senha" type="password" size="60" required />
-                            <label for="senha">Senha</label>
-                        </div>
-                    </div>
-
-                    <div class="inputs">
-                        <div class="caixa__cadastro-input">
-                            <input id="cep" name="cep" type="text" required value="" size="10" maxlength="9" onblur="pesquisacep(this.value);"/>
-                            <label for="cep">CEP</label>
-                        </div>
-                        <div class="caixa__cadastro-input">
-                            <input id="rua" name="rua" type="text" size="60" required />
-                            <label for="rua">Rua</label>
-                        </div>
-                    </div>
-                    
-                    <div class="inputs">
-                        <div class="caixa__cadastro-input">
-                            <input id="cidade" name="cidade" type="text" size="40" required />
-                            <label for="cidade">Cidade</label>
-                        </div>
-                        <div class="caixa__cadastro-input">
-                            <input id="bairro" name="bairro" type="text" size="40" required />
-                            <label for="bairro">Bairro</label>
-                        </div>
-                    </div>
-                    <div class="input1">
-                        <div class="caixa__cadastro-input">
-                            <input id="uf" name="uf" type="text" size="2" required />
-                            <label for="uf">Estado</label>
-                        </div>
-                    </div>
-                        
-                    <a href="submit" value="acessar">
-                        
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Finalizar Cadastro
-                    </a>  
-                </form>
-            </div>
-        </div>    
-    </section>
-        <!--Final PopUp Login-->   
-        
-
-    <section class="modelos">
-        <div class="line-1">
-            
+<!--Menu-->
+<section class="navbar">
+    <nav>
+        <div class="logo">
+            <img src="./assets/images/logo.png"  width="80px"/>
         </div>
-    </section>
+        <div class="navtools">
+            <ul>
+                <li><a href="/home/index.html">Inicio</a></li>
+                    <li><a class="selected" href="/home/models.html">Modelos</a></li>
+                    <li><a href="">Nossa Marca</a></li>
+            </ul>
+        </div>
+        <div class="accounttools">
+            <ul>
+                <li><a onclick="openCadastForm()" class="nav__links caixa__cadastro">Cadastro</a></li>
+                <li><a onclick="openLoginForm()" class="nav__links caixa__login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Final do Menu-->
+
+    <!--PopUp Login-->
+    <div id="loginForm" class="modal">
+        <div class="modalcont">
+        <span class="close" onclick="closeLoginForm()">&times;</span>
+        <h2>Login</h2>
+            <form method="POST" target="_blank" action="index.html"  >
+                <div class="caixa__login-input">
+                    <input name="email" type="text" required />
+                    <label>Email</label>
+                </div>
+                <div class="caixa__login-input">
+                    <input name="senha"type="password" required />
+                    <label>Senha</label>
+                </div>
+                <a href="submit" value="acessar">
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Acessar
+                </a>
+            </form>
+        </div>
+    </div>   
+
+    <div id="CadastroForm" class="modal">
+        <div class="modalcont2">
+        <span class="close" onclick="closeCadastForm()">&times;</span>
+        <h2>Cadastre-se</h2>
+            <form method="post" target="_blank" action="./assets/php/inserir.php"  >
+                <div class="inputs">
+                    <div class="caixa__cadastro-input">
+                        <input id="nome" name="nome" type="text" required />
+                        <label>Nome Completo</label>
+                    </div>
+                    <div class="caixa__cadastro-input">
+                        <input id="cpf" name="cpf" oninput="mascara(this)" type="text" required>
+                        <label>CPF</label>
+                    </div> 
+                </div>
+                <div class="inputs">
+                    <div class="caixa__cadastro-input">
+                        <input id="email" name="email" type="email" required/>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="caixa__cadastro-input">
+                        <input id="senha" name="senha" type="password" size="60" required />
+                        <label for="senha">Senha</label>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="caixa__cadastro-input">
+                        <input id="cep" name="cep" type="text" required value="" size="10" maxlength="9" onblur="pesquisacep(this.value);"/>
+                        <label for="cep">CEP</label>
+                    </div>
+                    <div class="caixa__cadastro-input">
+                        <input id="rua" name="rua" type="text" size="60" required />
+                        <label for="rua">Rua</label>
+                    </div>
+                </div>
+                
+                <div class="inputs">
+                    <div class="caixa__cadastro-input">
+                        <input id="cidade" name="cidade" type="text" size="40" required />
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="caixa__cadastro-input">
+                        <input id="bairro" name="bairro" type="text" size="40" required />
+                        <label for="bairro">Bairro</label>
+                    </div>
+                </div>
+                <div class="input1">
+                    <div class="caixa__cadastro-input">
+                        <input id="uf" name="uf" type="text" size="2" required />
+                        <label for="uf">Estado</label>
+                    </div>
+                </div>
+                    
+                <a href="submit" value="acessar">
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Finalizar Cadastro
+                </a>  
+            </form>
+        </div>
+    </div>    
+</section>
+    <!--Final PopUp Login-->   
 
 
+      <section class="catalog" id="catalog">
+        <div class="content">
+          <div class="title-wrapper-catalog">
+            <p>Encontre o que você quer</p>
+            <h3>Modelos</h3>
+          </div>
+          <div class="filter-card">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Escolha seu modelo Favorito"
+            />
+            <button class="search-button">Procurar</button>
+          </div>
+          <div class="card-wrapper">
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <a class="button" href="/home/pagamento.html">Ver esse</a>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="./assets/images/car-card.png" alt="Car" />
+              <div class="card-content">
+                <h3>Audi Supra TT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus.
+                </p>
+                <button type="button">Ver esse</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+</section>
 
 <!-- Seção Rodapé-->
 <section class="foot">
@@ -279,8 +391,6 @@
         </footer>
     </div>
 </section>
-
-
 
 
 

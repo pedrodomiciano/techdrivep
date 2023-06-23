@@ -18,3 +18,9 @@ function openLoginForm() {
   function closeimgslid() {
     document.getElementById("imgslide").style.display = "none";
   };
+  function opencheck() {
+    document.getElementById("wrapper2").style.display = "flex";
+  }
+  function closecheck() {
+    document.getElementById("wrapper2").style.display = "none";
+  };

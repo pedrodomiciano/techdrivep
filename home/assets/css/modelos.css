@@ -131,6 +131,7 @@ section .card-item {
   margin-bottom: 10px;
   text-align: center;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 .card-item button:hover {
@@ -140,5 +141,9 @@ section .card-item {
 .button:hover {
     background: #dedede;
   color: var(--blue);
+}
+
+#title-card {
+  margin-bottom: 10px;
 }
 

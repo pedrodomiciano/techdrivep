@@ -1,50 +1,13 @@
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-}
-
-.container{
-    width: 80vw;
-    margin: 75px auto;
-}
-
-.header-nav{
-    background-color: #162028;
-    position: relative;
-}
-
-.logo{
-    display: inline-block;
-    margin: 2px 0px 5px 50px;
-}
-
-.nav-menu{
-    display: inline-block;
-    position: absolute;
-    right: 50px;
-    top: -5px;
-}
-
-.nav-item{
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.nav-link{
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #264966;
-    transition: .2s;
-}
-
-.nav-link:hover{
-    color: #ccc;
-}
-
-.hero img{
+.hero {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.hero video{
+    width: 85%;
 }
 
 .portifolio{
@@ -96,21 +59,25 @@ body{
 }
 
 .about-us{
-    height: 600px;
-    background-color: #003D52;
+    height: 500px;
+    background-color: black;
     background-image: url(../images/bg_detalhe.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     
 }
 
 .about-us h2{
-    padding-top: 100px;
     padding-left: 100px;
+    width: 700px;
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .about-us p{
@@ -120,7 +87,7 @@ body{
 }
 
 .contact{
-    color: #003D52;
+    color: red;
 }
 
 .contact-publicity{
@@ -149,4 +116,7 @@ footer p{
     text-align: center;
     letter-spacing: 2px;
     font-size: 13px;
+}
+#title-port {
+    margin-bottom: 20px;
 }

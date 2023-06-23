@@ -57,3 +57,11 @@
     color: gray;
     border: 2px solid gray;
    }
+
+   #exp-bot {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }

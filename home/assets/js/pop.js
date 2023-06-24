@@ -19,8 +19,8 @@ function openLoginForm() {
     document.getElementById("imgslide").style.display = "none";
   };
   function opencheck() {
-    document.getElementById("wrapper2").style.display = "flex";
+    document.getElementById("app").style.display = "flex";
   }
   function closecheck() {
-    document.getElementById("wrapper2").style.display = "none";
+    document.getElementById("app").style.display = "none";
   };

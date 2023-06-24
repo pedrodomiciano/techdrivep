@@ -72,6 +72,9 @@
 
 <!-- partial:index.partial.html -->
 <div class="wrapper2" id="app">
+  <span class="material-symbols-outlined closecheck" onclick="closecheck()">
+    close
+    </span>
     <div class="card-form">
       <div class="card-list">
         <div class="card-item" v-bind:class="{ '-active' : isCardFlipped }">
@@ -145,11 +148,11 @@
                         <span class="card-item__nameItem" v-for="(n, $index) in cardName.replace(/\s\s+/g, ' ')" v-if="$index === $index" v-bind:key="$index + 1">{{n}}</span>
                       </transition-group>
                     </div>
-                    <div class="card-item__name" v-else key="2">Full Name</div>
+                    <div class="card-item__name" v-else key="2">Nome Completo</div>
                   </transition>
                 </label>
                 <div class="card-item__date" ref="cardDate">
-                  <label for="cardMonth" class="card-item__dateTitle">Expires</label>
+                  <label for="cardMonth" class="card-item__dateTitle">Expiração</label>
                   <label for="cardMonth" class="card-item__dateItem">
                     <transition name="slide-fade-up">
                       <span v-if="cardMonth" v-bind:key="cardMonth">{{cardMonth}}</span>
@@ -190,7 +193,7 @@
       </div>
       <div class="card-form__inner">
         <div class="card-input">
-          <label for="cardNumber" class="card-input__label">Card Number</label>
+          <label for="cardNumber" class="card-input__label">Número do Cartão</label>
           <input type="text" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off">
         </div>
         <div class="card-input">
@@ -200,7 +203,7 @@
         <div class="card-form__row">
           <div class="card-form__col">
             <div class="card-form__group">
-              <label for="cardMonth" class="card-input__label">Expiration Date</label>
+              <label for="cardMonth" class="card-input__label">Data de Experação</label>
               <select class="card-input__input -select" id="cardMonth" v-model="cardMonth" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardDate">
                 <option value="" disabled selected>Month</option>
                 <option v-bind:value="n < 10 ? '0' + n : n" v-for="n in 12" v-bind:disabled="n < minCardMonth" v-bind:key="n">
@@ -224,7 +227,7 @@
         </div>
 
         <button class="card-form__button">
-          Submit
+          <a href="abr.html">Submit</a>
         </button>
       </div>
     </div>
@@ -482,7 +485,7 @@
                             </span>
                         <p id="txt-coming3">Your design qualifies for a $7,500 federal tax credit for eligible buyers.</p>
                     </div>
-                        <a href="" class="orderbuy" onclick="opencheck()">Pedir Agora</a>
+                        <a class="orderbuy" onclick="opencheck()">Pedir Agora</a>
                 </div>
                 
             </div>

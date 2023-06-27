@@ -108,12 +108,12 @@
   border: none;
   border-radius: 5px;
   font-size: 22px;
-  font-weight: 500;
-  font-family: "Source Sans Pro", sans-serif;
-  box-shadow: 3px 10px 20px 0px rgba(35, 100, 210, 0.3);
-  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 20px;
   cursor: pointer;
+  color:white;
+  
+  
 }
 @media screen and (max-width: 480px) {
   .card-form__button {

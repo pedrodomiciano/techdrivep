@@ -14,6 +14,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .navtools ul{
     list-style: none;

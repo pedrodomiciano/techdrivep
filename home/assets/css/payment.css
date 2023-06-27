@@ -26,16 +26,23 @@
     z-index: 10;
     color: white;
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
 }
 .texto-infocar {
-  margin-top: 100px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  
+ 
+  
 }
 .texto-infocar h2 {
   font-size: 40px;
+  
 }
 
 .escurecer-img {
@@ -178,7 +185,7 @@
     flex: 10;
   }
   .carousel .card .img {
-    background: #8B53FF;
+    background: #f6f1ff;
     height: 148px;
     width: 148px;
     border-radius: 50%;
@@ -234,6 +241,7 @@
   font-size: 15px;
   color: #c7c7c7;
   margin-top: 20px;
+  
 }
 .zipcode {
   font-size: 15px;
@@ -435,6 +443,7 @@
   margin-top: 30px;
   background-color: red;
   color: white;
+  cursor: pointer;
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .open-btn {

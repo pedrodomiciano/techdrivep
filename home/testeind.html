@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/carhome.css">
     <link rel="stylesheet" href="./assets/css/geral.css">
-    <link rel="stylesheet" href="./assets/css/menu-il.css">
-    <link rel="stylesheet" href="./assets/css/politica-priv.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/lancamentos.css">
+    <link rel="stylesheet" href="./assets/css/videohome.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/techlive.css">
     <link rel="stylesheet" href="./assets/css/faleconosco.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +23,70 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    
+
+
+    <title>TechMotors</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+        }
+        
+        .container {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 40px;
+          margin-bottom:150px;
+          background-color: #fff;
+          text-align: center;
+          border-radius: 4px;
+          margin-top: 150px;
+          box-shadow: 0 10px 16px rgb(0, 0, 0);
+        }
+        
+        h1 {
+          color: #333;
+        }
+        
+        p {
+          color: #666;
+          margin-bottom: 30px;
+        }
+        
+        .btn {
+          display: inline-block;
+          background-color: red;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 4px;
+        }
+        
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.3);}
+
+    
+      </style>
+
+      
 </head>
+
 <body>
+
+    <video id="video-background" autoplay loop muted>
+        <source src="/home/assets/video/vid5.mp4" type="video/mp4">
+      </video>
+
     <!-- teste botão-->
     <button class="botao" onclick="abrirFaleConosco()">
         <span class="material-symbols-outlined">
@@ -37,27 +102,27 @@
             <h3 class="cont-txt">Converse Conosco</h3>
             <h5 class="cont-sub">Antes de o ligarmos a um Atendente, forneça as seguintes informações</h5>
             <label>
-                <p class="tt-lb">Nome Próprio</p>
+                <h2 class="tt-lb">Nome Próprio</h2>
                 <input class="put-txt-cont" type="text" />
             </label>
             <label>
-                <p class="tt-lb">Sobrenome (Opcional)</p>
+                <h2 class="tt-lb">Sobrenome (Opcional)</h2>
                 <input class="put-txt-cont" type="text" />
             </label>
             <label>
-                <p class="tt-lb">Endereço eletrônico</p>
+                <h2 class="tt-lb">Endereço eletrônico</h2>
                 <input class="put-txt-cont" type="text" />
             </label>
             <label>
-                <p class="tt-lb">Telefone</p>
+                <h2 class="tt-lb">Telefone</h2>
                 <input class="put-txt-cont" type="number" />
             </label>
             <label>
-                <p class="tt-lb">Código Postal</p>
+                <h2 class="tt-lb">Código Postal</h2>
                 <input class="put-txt-cont" type="number" />
             </label>
             <div class="bot-pop">
-                <a class="cont-pop-bt" href="">Iniciar Bate-Papo</a>
+                <a class="cont-pop-bt" href="https://web.whatsapp.com/">Iniciar Bate-Papo</a>
             </div>
             
         </div>
@@ -167,84 +232,26 @@
                         </div>
                     </div>
                         
-                    
                     <a href="submit" value="acessar">
                        
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                        Acessar
-                    </a>
+                        Finalizar Cadastro
+                    </a>  
+                </form>
             </div>
         </div>    
     </section>
         <!--Final PopUp Login-->    
-
-
-
-        <div id="particles-js">
-            <div class="priv-tt">
-                <h2>Politica de Privacidade</h2>
-            </div>
-            <div class="priv-txt">
-                <p>
-                    Esta Política de Privacidade descreve como são coletadas, usadas, armazenadas e divulgadas as informações pessoais dos usuários deste site dedicado a carros movidos a luz solar. A proteção da sua privacidade é importante para nós, e estamos empenhados em garantir a confidencialidade e a segurança dos seus dados pessoais. Por favor, leia atentamente esta política para entender como tratamos suas informações.
-                    <br>
-                    <br>
-                    <b>1.Informações coletadas</b>
-                    <br>
-                    Coletamos informações pessoais que você nos fornece voluntariamente ao utilizar nosso site, como nome, endereço de e-mail, número de telefone e qualquer outra informação necessária para fornecer os serviços solicitados ou melhorar sua experiência como usuário.
-                    <br>
-                    <br>
-                    <b>2.Uso das informações</b>
-                    <br>
-                    Utilizamos as informações coletadas para os seguintes propósitos:
-                    <br>
-                    a) Fornecer informações sobre carros movidos a luz solar e outros produtos relacionados.
-                    <br>
-                    b) Personalizar e melhorar sua experiência no site.
-                    <br>
-                    c) Enviar atualizações sobre novos modelos de carros movidos a luz solar e promoções.
-                    <br>
-                    d) Responder às suas perguntas, solicitações de suporte ou comentários.
-                    <br>
-                    e) Realizar pesquisas e análises de mercado para melhorar nossos serviços.
-                    <br>
-                    <br>
-                    <b>3.Compartilhamento de informações</b>
-                    <br>
-                    Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto nos seguintes casos:
-                    a) Com o seu consentimento explícito.
-                    b) Para cumprir obrigações legais, como responder a ordens judiciais ou solicitações governamentais.
-                    c) Para proteger nossos direitos, propriedade ou segurança, ou dos usuários do site.
-                    <br>
-                    <br>
-                    <b>4.Cookies e Tecnologias Semelhantes</b>
-                    <br>
-                    Podemos utilizar cookies e tecnologias semelhantes para coletar informações sobre sua atividade no site. Essas informações são usadas para personalizar sua experiência, analisar tendências e melhorar nossos serviços. Você pode configurar seu navegador para recusar cookies, mas isso pode limitar algumas funcionalidades do site.
-                    <br>
-                    <br>
-                    <b>5.Segurança das informações</b>
-                    <br>
-                    Empregamos medidas de segurança razoáveis para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela Internet ou de armazenamento eletrônico é 100% seguro, e não podemos garantir a segurança absoluta dos dados.
-                    <br>
-                    <br>
-                    <b>6.Menores de idade</b>
-                    <br>
-                    Este site não se destina a menores de idade, e não coletamos intencionalmente informações pessoais de crianças. Se você acredita que seu filho forneceu informações pessoais sem o seu consentimento, entre em contato conosco imediatamente, e tomaremos as medidas necessárias para remover essas informações de nossos registros.
-                    <br>
-                    <br>
-                    <b>7.Links para sites de terceiros</b>
-                    <br>
-                    Nosso site pode conter links para sites de terceiros. Esta Política de Privacidade se aplica apenas ao nosso site, e não somos responsáveis pelas práticas de privacidade desses sites. Recomendamos que você leia as políticas de privacidade de terceiros antes de fornecer suas informações pessoais a eles.
-                </p>
-            </div>
-        </div>
-
-
-
-        <!-- Seção Rodapé-->
+        <div class="container">
+            <h1>Produto Indisponível</h1>
+            <p>O produto que você está procurando não está disponível no momento.</p>
+            <p>Por favor, verifique novamente mais tarde ou entre em contato conosco para obter mais informações.</p>
+            <a href="https://web.whatsapp.com/" class="btn">Contato</a>
+          </div>
+    <!-- Seção Rodapé-->
     <section class="foot">
         <div class="rodape">
             <footer>
@@ -285,7 +292,7 @@
                         </div>
                         <div class="c1-links">
                             <a href="/home/pc.html">Política de Cookies</a>
-                            <a href="/index.html">Home</a>
+                            <a href="/home/pp.html">Política de Privacidade</a>
                             <a href="/home/ms.html">Manual de Segurança</a>
                             <a href="/home/il.html">Informações Legais</a>
                         </div>
@@ -295,27 +302,27 @@
                     <div class="nome">© TECHMOTORS GROUP Brasil 2023</div>
                     <div class="redessociais">
                         <div class="icon">
-                            <a href="#">
+                            <a href="https://web.whatsapp.com/">
                                 <img src="./assets/images/whats.png" alt="" width="40px">
                             </a>
                         </div>
                         <div class="icon">
-                            <a href="#">
+                            <a href="https://www.youtube.com/@techmotors8944">
                                <img src="./assets/images/youtube.png" alt="" width="40px"> 
                             </a>
                         </div>
                         <div class="icon">
-                            <a href="#">
+                            <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C513440386732%7Ce%7Cfacebook%7C&placement=&creative=513440386732&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9102354%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwkeqkBhAnEiwA5U-uM8FtETvPDITC9Vco11hies0FbSchr1ExxzAuloWUBCHC2b2i64AAfRoC-q8QAvD_BwE">
                                 <img src="./assets/images/face.png" alt="" width="40px">
                             </a>
                         </div>
                         <div class="icon">
-                            <a href="#">
+                            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D">
                                 <img src="./assets/images/twitter.png" alt="" width="40px">
                             </a>
                         </div>
                         <div class="icon">
-                            <a href="#">
+                            <a href="https://www.instagram.com/pedrodomicianoo/">
                               <img src="./assets/images/insta.png" alt="" width="40px">  
                             </a>
                         </div>
@@ -326,12 +333,16 @@
         </div>
     </section>
 
+
+
+
+
+    
     <script src="./assets/js/pop.js" ></script>
     <script src="./assets/js/faleconosco.js"></script>
     <script src="./assets/js/cpf.js"></script>
     <script src="./assets/js/endereço.js"></script>
     <script src="./assets/js/jquery-3.6.4.min.js"></script>
-    <script src="/home/assets/js/particles.js"></script>
-    <script src="/home/assets/js/app.js"></script>
+    <script src="./assets/js/trocaimagem.js"></script>
 </body>
 </html>
